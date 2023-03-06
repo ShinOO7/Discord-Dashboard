@@ -1,0 +1,244 @@
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #36393f;
+}
+
+/* Common Body css */
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container div svg {
+  margin-top: -100px;
+  width: 415px;
+  margin-bottom: 30px;
+}
+
+.container div p {
+  font-size: 0.7rem;
+  color: #72767d;
+  text-align: center;
+}
+/* ------------------------------------------- */
+
+/* All css */
+.allContainer {
+  padding: 15px 30px;
+  width: 100%;
+}
+
+.allInput {
+  position: relative;
+}
+
+.allInput input {
+  background: #202225;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.725rem;
+  width: 100%;
+}
+
+.allInput i {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  color: #72767d;
+  font-size: 0.7rem;
+}
+
+.friendsList {
+  margin-top: 20px;
+}
+
+.friendsList > span {
+  font-size: 0.6rem;
+  color: #b9bbbe;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.friendsList .friend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(122, 126, 131, 0.2);
+  padding: 15px 0px;
+}
+
+.friendIcon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.friendIcon > div:first-child {
+  width: 35px;
+  height: 35px;
+  background: #5865f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.friendIcon > div:first-child svg {
+  fill: white;
+}
+
+.friendIcon div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.friendIcon div:last-child h3 {
+  font-size: 0.75rem;
+  color: #fff;
+}
+.friendIcon div:last-child span {
+  font-size: 0.65rem;
+  margin-top: -2px;
+  color: #b9bbbe;
+  font-weight: 600;
+}
+
+.friend > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.friend > div:last-child span {
+  width: 35px;
+  height: 35px;
+  background: #2f3136;
+  display: block;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e9297;
+  font-size: 0.7rem;
+}
+.friend > div:last-child span:first-child i {
+  margin-top: 4px;
+}
+/* ------------------------------------------- */
+
+/* Addfriend css */
+.addFriendContainer {
+  width: 100%;
+}
+
+.addFriendContainer > div:last-child {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.addFriendContainer > div:last-child p {
+  font-size: 0.7rem;
+  color: #72767d;
+  text-align: center;
+}
+.addFriendContainer > div:last-child > svg {
+  width: 415px;
+  margin-top: -250px;
+  margin-bottom: 30px;
+}
+
+.friendInput {
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(122, 126, 131, 0.2);
+}
+
+.friendInput h3 {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.friendInput p {
+  font-size: 0.65rem;
+  margin: 15px 0px;
+  font-weight: 600;
+  color: #8e9297;
+}
+
+.friendInput > div {
+  border: 1px solid #202225;
+  border-radius: 8px;
+  background: #303338;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.friendInput > div > input {
+  font-size: 0.75rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: #8e9297;
+  width: 100%;
+}
+
+.friendInput > div > button {
+  font-size: 0.675rem;
+  font-weight: 600;
+  color: #fff;
+  background: #5865f2;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+/* ------------------------------------------- */
+
+/* Active Now css */
+.activeContainer {
+  width: clamp(358px, 50vw, 550px);
+  padding: 20px;
+  border-left: 1px solid rgba(122, 126, 131, 0.2);
+}
+
+.activeContainer h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.activeContainer div {
+  padding: 0px 4px;
+  text-align: center;
+}
+
+.activeContainer div h4 {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.activeContainer div p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #8e9297;
+}
+
+@media screen and (max-width: 1200px) {
+  .activeContainer {
+    display: none;
+  }
+}
+/* ------------------------------------------- */

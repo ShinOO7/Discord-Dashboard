@@ -1,0 +1,128 @@
+.serverBar {
+  min-width: 72px;
+  min-height: 100vh;
+  padding: 10px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: #202225;
+}
+
+.serverBar .iconContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.serverBar .border {
+  width: 0px;
+  height: 0px;
+  background: #dcddde;
+  position: absolute;
+  left: -2px;
+  transition: all 0.2s linear;
+}
+
+.serverIcon {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: #2f3136;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all linear 0.2s;
+}
+
+.serverIcon:hover {
+  background: #5865f2;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.iconContainer:nth-last-child(1) .serverIcon:hover,
+.iconContainer:nth-last-child(3) .serverIcon:hover,
+.iconContainer:nth-last-child(4) .serverIcon:hover {
+  background: #3ba55d;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.serverIcon:hover ~ .border {
+  width: 6px;
+  height: 20px;
+  border-radius: 35%;
+}
+
+.active {
+  background: #5865f2;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.iconContainer:nth-last-child(1) .active,
+.iconContainer:nth-last-child(3) .active,
+.iconContainer:nth-last-child(4) .active {
+  background: #3ba55d;
+  border-radius: 30%;
+  cursor: pointer;
+}
+.iconContainer:nth-last-child(1) .active > i,
+.iconContainer:nth-last-child(3) .active > i,
+.iconContainer:nth-last-child(4) .active > i {
+  color: #fff;
+}
+
+.active ~ .border,
+.active:hover ~ .border {
+  width: 6px;
+  height: 42px;
+  border-radius: 35%;
+}
+
+.active ~ .border,
+.active:hover ~ .border {
+  width: 6px;
+  height: 42px;
+  border-radius: 35%;
+}
+
+.serverIcon > svg {
+  fill: #dcddde;
+  transition: all linear 0.2s;
+  margin-bottom: 2px;
+}
+
+.serverIcon > i {
+  color: #3ba55d;
+  transition: all linear 0.2s;
+  font-size: 1rem;
+}
+.serverIcon:hover > i {
+  color: #fff;
+}
+
+.serverIcon:hover svg,
+.serverIcon:focus svg,
+.serverIcon:focus-visible svg {
+  fill: #f6f6f6;
+}
+
+.serverIcon h2 {
+  font-size: 0.9rem;
+  color: #dcddde;
+  font-weight: 500;
+}
+
+.serverIcon > * {
+  pointer-events: none;
+}
+
+.partitionBorder {
+  width: 30px;
+  height: 2px;
+  background: #2d2f31;
+}

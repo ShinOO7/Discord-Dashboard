@@ -1,0 +1,173 @@
+.register {
+  width: 480px;
+  background: #36393f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.logo svg path {
+  fill: #fff;
+}
+
+.logo h2 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.register > h2 {
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+}
+
+.register p {
+  font-size: 0.55rem;
+  display: block;
+  color: #72767d;
+}
+
+.register a {
+  text-decoration: none;
+  font-size: 0.55rem;
+  color: #00aff4;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form .sub-container .input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form .sub-container label {
+  color: #b9bbbe;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.form .sub-container label {
+  color: #b9bbbe;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.form .sub-container input {
+  color: #b9bbbe;
+  font-size: 0.8rem;
+  background: #2f3136;
+  padding: 0.65em;
+  border-radius: 3px;
+  border: 1px solid #23272a;
+  transition: all linear 0.2s;
+  outline: none;
+}
+
+.form .sub-container input:hover {
+  border: 1px solid black;
+}
+
+.form .sub-container input:focus,
+.form .sub-container input:focus-visible {
+  border: 1px solid #00aff4;
+}
+
+.form .sub-container .inputlist-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 10px;
+  flex: 1 0 0;
+}
+
+.inputlist {
+  flex: 1;
+}
+.inputlist:nth-child(2) {
+  flex: 1.7;
+}
+.inputlist:nth-child(3) {
+  flex: 1.4;
+}
+
+.inputlist input {
+  width: 100%;
+}
+
+.form .sub-container span {
+  font-size: 0.65rem;
+  display: block;
+  color: #72767d;
+  margin-top: 2px;
+}
+
+.form .sub-container button {
+  background: #5865f2;
+  font-weight: 500;
+  font-size: 0.7rem;
+  border: none;
+  transition: all linear 0.3s;
+}
+.form .sub-container button:hover {
+  background: #404eed;
+  cursor: pointer;
+}
+
+.form a {
+  text-decoration: none;
+  font-size: 0.65rem;
+  color: #00aff4;
+  cursor: pointer;
+  margin: 0.8em 0 1.4em 0;
+  display: block;
+}
+
+@media only screen and (max-width: 480px) {
+  .register {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px !important;
+    padding: 1em 0.65em !important;
+  }
+
+  .logo {
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4%;
+    margin: 0;
+  }
+
+  .logo svg {
+    min-width: 50px;
+  }
+
+  .register > h2 {
+    margin-top: 18vh;
+  }
+}

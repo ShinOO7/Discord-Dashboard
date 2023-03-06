@@ -1,0 +1,326 @@
+/* Home css */
+.container {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+/* --------------------------------------- */
+
+/* HomeBar css */
+.homeBar {
+  min-width: 240px;
+  height: 100%;
+  background: #2f3136;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeBarInput {
+  height: 48px;
+  padding: 10px 10px;
+  border-bottom: 1px solid #202225;
+  display: flex;
+  align-items: center;
+}
+
+.homeBarInput button {
+  width: 100%;
+  background: #202225;
+  border: none;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 0.635rem;
+  padding: 5px 6px;
+  color: #72767d;
+  cursor: pointer;
+}
+
+.homeBarIcon {
+  margin: 10px;
+  margin-bottom: 0;
+  background: #393c42;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 8px 10px;
+}
+
+.homeBarIcon:nth-child(3) {
+  background: none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.homeBarIcon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.homeBarIcon:nth-child(2) svg path:nth-child(1) {
+  fill: #fff;
+}
+.homeBarIcon:nth-child(3) svg path:nth-child(1) {
+  fill: #8e9297;
+}
+
+.homeBarIcon span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #fff;
+}
+.homeBarIcon:nth-child(3) span {
+  color: #8e9297;
+}
+/* ------------------------------------------- */
+
+/* Users css */
+.dmGroups {
+  padding: 0px 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dmGroups h3 {
+  font-size: 0.65rem;
+  color: #8e9297;
+  width: 100%;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dmGroups h3 i {
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.dmGroups .dm {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.dm span {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #8e9297;
+}
+
+.dm span:nth-child(1) {
+  width: 35px;
+  height: 35px;
+  background: #5865f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.dm span svg {
+  fill: white;
+  min-width: 40px;
+}
+
+/* ------------------------------------------ */
+
+/* User css */
+.user {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  padding: 10px;
+  background: #23272a;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.user > div > div:nth-child(1) {
+  width: 35px;
+  height: 35px;
+  background: #8e9297;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user > div > div > svg {
+  width: 60%;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.user > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user > div > div:nth-child(2) h4 {
+  font-size: 0.7rem;
+  color: #fff;
+}
+.user > div > div:nth-child(2) span {
+  font-size: 0.65rem;
+  margin-top: -4px;
+  color: #b9bbbe;
+}
+
+.user ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+  color: #b9bbbe;
+  margin-right: 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+/* ------------------------------------ */
+
+.bodyContainer {
+  width: 100%;
+}
+
+/* Navigation css */
+.navigation {
+  width: 100%;
+  min-height: 48px;
+  background: #36393f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #202225;
+  overflow: hidden;
+  position: relative;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  left: 13px;
+  padding-left: 5px;
+}
+
+.navigation ul li,
+.navigation ul button {
+  padding: 3px 5px;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.navigation ul li {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  gap: 8px;
+  background: none;
+  padding: 0;
+}
+.navigation .navPartition {
+  height: 25px;
+  width: 1px;
+  display: block;
+  background: #7a7e83;
+  opacity: 0.2;
+  margin: 0px 15px;
+}
+
+.navigation ul li svg {
+  width: 23px;
+}
+.navigation ul li svg path:nth-child(1) {
+  fill: #8e9297;
+}
+
+.navigation ul button {
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #8e9297;
+  border: none;
+  border-radius: 4px;
+  margin: 0px 5px;
+}
+
+.navigation ul button:last-child {
+  background: #3ba55d;
+  color: #fff;
+}
+
+.navigation ul button:hover {
+  background: rgba(185, 187, 190, 0.05);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navigation ul button:last-child:hover {
+  background: #3ba55d;
+  color: #fff;
+}
+
+.activeBtn {
+  color: #fff !important;
+  background: rgba(185, 187, 190, 0.05) !important;
+}
+.activeBtn:last-child {
+  color: #3ba55d !important;
+  background: none !important;
+}
+
+.navigation div:last-child {
+  display: flex;
+  align-items: center;
+  color: #b9bbbe;
+  background: #36393f;
+  position: absolute;
+  padding: 0px 22px;
+  right: 0;
+  min-height: 100%;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 990px) {
+  .navigation div:last-child {
+    box-shadow: -6px 0px 5px 1px rgba(13, 6, 6, 0.06);
+    -webkit-box-shadow: -6px 0px 5px 1px rgba(13, 6, 6, 0.06);
+    -moz-box-shadow: -6px 0px 5px 1px rgba(13, 6, 6, 0.06);
+  }
+}
+
+.navigation div:last-child i {
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.navigation div:last-child i:hover {
+  color: #dcddde;
+}
+
+.navigation div:last-child svg {
+  width: 25px;
+  cursor: pointer;
+}
+.navigation div:last-child svg:hover {
+  color: #dcddde;
+}
+
+.navigation div:last-child svg:last-child {
+  margin-left: 15px;
+}
